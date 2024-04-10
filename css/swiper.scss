@@ -14,6 +14,7 @@ body{
 .services {
     font-family: TTLakes-Regular;
     &__header {
+        box-sizing: border-box;
         width: 320px;
         height: 80px;
         background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
@@ -35,6 +36,7 @@ body{
         font-weight: 500;
     }
     &__body {
+        // width: 320px
     }
 }
 // .title {
@@ -42,6 +44,7 @@ body{
 // }
 .logo-slider {
     &__wrapper {
+        
     }
     &__slide {
 
@@ -50,19 +53,46 @@ body{
         // top: 96px;
         // left: 16px;
         // gap: 0px;
-        // opacity: 0px;
+        opacity: 0px;
         background-color: #FFFFFF;
         border: 1px solid #EAEAEA;
         margin-bottom: 16px;
     }
-    &__brand {
-        width: 108px;
-        height: 32px;
-        background: url("../img/бренды.svg") no-repeat;
-        background-position: -48px -100px;
-        transform: translate(16px, 20px);
-    }
+
+		
     &__image {
+        width: 140px;
+        height: 70px;
+        background: url("../img/бренды.svg") no-repeat;
+        
+        transform: translate(10px, 1px);
+        &--brand-lenovo {
+            background-position: -42px -81px;
+        }
+        &--brand-samsung {
+            background-position: -314px -81px;
+            border-top-left-radius:88%;
+        }
+        &--brand-apple {
+            background-position: -586px -81px;
+        
+        }
+        &--brand-viewSonic {
+            background-position: -858px -81px;
+        
+        }
+        &--brand-bosch {
+            background-position: -42px -169px;
+        }
+        &--brand-hp {
+            background-position: -314px -169px;
+        }
+        &--brand-acer {
+            background-position: -586px  -169px;
+        }
+        &--brand-sony {
+            background-position: -858px -169px;
+        }
     }
     &__button {
         width: 40px;
@@ -71,9 +101,31 @@ body{
         border: none;
         border-radius: 100%;
         background: transparent url("../img/бренды.svg") no-repeat -216px -96px;
-        transform: translate(184px, -16px);
+        transform: translate(184px, -54px);
+    }
+    
+
+    &__fade{
+       
+
     }
 }
+.logo_slider__fade {
+    //float: left;
+
+    position: absolute;
+    z-index: 2;
+    transform: translate(296px, -97px);
+        width: 24px;
+        height: 81px;
+        // top: 87px;
+        // left: 296px;
+        // gap: 0px;
+        // opacity: 0px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
+
+
 .swiper-container {
 }
 .swiper-wrapper {
@@ -97,7 +149,7 @@ body{
 height: 12px;
 background-color: #DDDDDD;
 
-}
+} 
 .swiper-pagination {
     position: relative;
 }

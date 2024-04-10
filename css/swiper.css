@@ -15,6 +15,8 @@ body {
   font-family: TTLakes-Regular;
 }
 .services__header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 320px;
   height: 80px;
   background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
@@ -37,17 +39,42 @@ body {
 .logo-slider__slide {
   width: 240px;
   height: 72px;
+  opacity: 0px;
   background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
   margin-bottom: 16px;
 }
-.logo-slider__brand {
-  width: 108px;
-  height: 32px;
+.logo-slider__image {
+  width: 140px;
+  height: 70px;
   background: url("../img/бренды.svg") no-repeat;
-  background-position: -48px -100px;
-  -webkit-transform: translate(16px, 20px);
-          transform: translate(16px, 20px);
+  -webkit-transform: translate(10px, 1px);
+          transform: translate(10px, 1px);
+}
+.logo-slider__image--brand-lenovo {
+  background-position: -42px -81px;
+}
+.logo-slider__image--brand-samsung {
+  background-position: -314px -81px;
+  border-top-left-radius: 88%;
+}
+.logo-slider__image--brand-apple {
+  background-position: -586px -81px;
+}
+.logo-slider__image--brand-viewSonic {
+  background-position: -858px -81px;
+}
+.logo-slider__image--brand-bosch {
+  background-position: -42px -169px;
+}
+.logo-slider__image--brand-hp {
+  background-position: -314px -169px;
+}
+.logo-slider__image--brand-acer {
+  background-position: -586px -169px;
+}
+.logo-slider__image--brand-sony {
+  background-position: -858px -169px;
 }
 .logo-slider__button {
   width: 40px;
@@ -56,8 +83,18 @@ body {
   border: none;
   border-radius: 100%;
   background: transparent url("../img/бренды.svg") no-repeat -216px -96px;
-  -webkit-transform: translate(184px, -16px);
-          transform: translate(184px, -16px);
+  -webkit-transform: translate(184px, -54px);
+          transform: translate(184px, -54px);
+}
+.logo_slider__fade {
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(296px, -97px);
+          transform: translate(296px, -97px);
+  width: 24px;
+  height: 81px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
 .image {
