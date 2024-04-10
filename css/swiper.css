@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.services__header {
+  width: 320px;
+  height: 80px;
+}
+.logo-slider__slide {
+  width: 240px;
+  height: 72px;
+  top: 96px;
+  left: 16px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+}
+.logo-slider__brand {
+  width: 108px;
+  height: 32px;
+  background: url("../img/бренды.svg") no-repeat;
+  background-position: -48px -100px;
+  -webkit-transform: translate(16px, 20px);
+          transform: translate(16px, 20px);
+}
+.logo-slider__button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: 100%;
+  background: transparent url("../img/бренды.svg") no-repeat -216px -96px;
+  -webkit-transform: translate(184px, -16px);
+          transform: translate(184px, -16px);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=swiper.css.map */

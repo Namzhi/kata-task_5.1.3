@@ -1,0 +1,78 @@
+// @font-face {
+//     font-family: "TTLakes-Bold";
+//     src: local("TT Lakes"), url(../font/services/TTLakes-Bold.ttf) format("truetype");
+// }
+
+// @font-face {
+//     font-family: "TTLakes-Regular";
+//     src: local("TT Lakes"), url(../font/services/TTLakes-Regular.ttf) format("truetype");
+// }
+
+
+.services {
+    // font-family: TTLakes-Regular;
+    &__header {
+        width: 320px;
+        height: 80px;
+    }
+    &__title {
+    }
+    &__body {
+    }
+}
+.title {
+}
+.logo-slider {
+    &__wrapper {
+    }
+    &__slide {
+
+        width: 240px;
+        height: 72px;
+        top: 96px;
+        left: 16px;
+        gap: 0px;
+        opacity: 0px;
+        background-color: #FFFFFF;
+        
+        border: 1px solid #EAEAEA;
+    }
+    &__brand {
+        width: 108px;
+        height: 32px;
+        background: url("../img/бренды.svg") no-repeat;
+        background-position: -48px -100px;
+        transform: translate(16px, 20px);
+    }
+    &__image {
+    }
+    &__button {
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        border-radius: 100%;
+        background: transparent url("../img/бренды.svg") no-repeat -216px -96px;
+        transform: translate(184px, -16px);
+    }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-pagination {
+}
+.swiper-scrollbar {
+}
+
+
