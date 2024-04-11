@@ -17,7 +17,6 @@ body {
 .services__header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 320px;
   height: 80px;
   background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
   background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
@@ -27,7 +26,7 @@ body {
 }
 .services__title {
   margin: 0;
-  width: 288px;
+  min-width: 288px;
   height: 48px;
   font-size: 16px;
   line-height: 24px;
@@ -36,12 +35,16 @@ body {
   color: #7E7E82;
   font-weight: 500;
 }
+.logo-slider__wrapper {
+  margin-left: 16px;
+}
 .logo-slider__slide {
   width: 240px;
   height: 72px;
   opacity: 0px;
   background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
+  border-radius: 6px;
   margin-bottom: 16px;
 }
 .logo-slider__image {
@@ -88,9 +91,10 @@ body {
 }
 .logo_slider__fade {
   position: absolute;
+  -webkit-transform: translate(0, -97px);
+          transform: translate(0, -97px);
+  right: 0;
   z-index: 2;
-  -webkit-transform: translate(296px, -97px);
-          transform: translate(296px, -97px);
   width: 24px;
   height: 81px;
   background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
@@ -119,4 +123,10 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC;
+}
+
+@media (min-width: 768px) {
+  .services__header {
+    height: 56px;
+  }
 }/*# sourceMappingURL=swiper.css.map */

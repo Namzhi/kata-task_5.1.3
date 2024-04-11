@@ -15,7 +15,7 @@ body{
     font-family: TTLakes-Regular;
     &__header {
         box-sizing: border-box;
-        width: 320px;
+        //width: 320px;
         height: 80px;
         background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
         padding-top: 16px;
@@ -24,7 +24,7 @@ body{
     }
     &__title {
         margin:0;
-        width: 288px;
+        min-width: 288px;
         height: 48px;
         //margin-top: 16px;
         // margin-left: 16px;
@@ -44,7 +44,7 @@ body{
 // }
 .logo-slider {
     &__wrapper {
-        
+        margin-left: 16px;
     }
     &__slide {
 
@@ -56,6 +56,7 @@ body{
         opacity: 0px;
         background-color: #FFFFFF;
         border: 1px solid #EAEAEA;
+        border-radius: 6px;
         margin-bottom: 16px;
     }
 
@@ -114,8 +115,11 @@ body{
     //float: left;
 
     position: absolute;
+    transform: translate(0, -97px);
+    right: 0;
+
     z-index: 2;
-    transform: translate(296px, -97px);
+    // transform: translate(100vh, -97px);
         width: 24px;
         height: 81px;
         // top: 87px;
@@ -160,3 +164,10 @@ background-color: #DDDDDD;
 }
 
 
+@media (min-width: 768px) {
+.services{
+    &__header{
+        height:56px;
+    }
+}
+}
