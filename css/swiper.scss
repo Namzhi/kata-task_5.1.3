@@ -116,17 +116,18 @@ body {
         height: 81px;
         background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
+
+    &__showmore {
+        &--hidden {
+            display: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }  
 }
 
 
-.show-more {
-    &--hidden {
-        display: none;
-    }
-    &:hover{
-        cursor: pointer;
-    }
-}
 
 .swiper-container {}
 
@@ -187,36 +188,37 @@ body {
         &__button {
             transform: translate(164px, -54px);
         }
+
         &__fade--hidden {
             display: none;
         }
-    }
 
-    .show-more {
-        width: 156px;
+        &__showmore {
+            width: 156px;
 
-        &--hidden {
-            display: block;
+            &--hidden {
+                display: block;
+            }
         }
 
-        &__text {
-            height: 24px;
-            font-family: TTLakes-Regular;
-            font-weight: 600;
-            font-size: 16px;
-            letter-spacing: -0.2px;
-            display: flex;
-            align-items: center;
-            margin-left: 24px;
-        }
+        &__showmore-text {
+                height: 24px;
+                font-family: TTLakes-Regular;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: -0.2px;
+                display: flex;
+                align-items: center;
+                margin-left: 24px;
 
-        &__text::before {
-            content: "";
-            background-image: url("../img/expand.svg");
-            height: 24px;
-            width: 24px;
-            margin-right: 9px;
-        }
+            &::before {
+                content: "";
+                background-image: url("../img/expand.svg");
+                height: 24px;
+                width: 24px;
+                margin-right: 9px;
+            }
+        }   
     }
 
 }

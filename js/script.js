@@ -14,8 +14,8 @@ new Swiper(".logo-slider", {
     },
 });
 
-let buttonShow = document.querySelector(".show-more");
-let buttonShowText = buttonShow.querySelector(".show-more__text");
+let buttonShow = document.querySelector(".logo-slider__showmore");
+let buttonShowText = buttonShow.querySelector(".logo-slider__showmore-text");
 let wrapper = document.querySelector(".logo-slider__wrapper");
 
 function show() {
