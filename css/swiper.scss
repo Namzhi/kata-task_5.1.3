@@ -8,26 +8,26 @@
     src: local("TT Lakes"), url(../font/services/TTLakes-Regular.ttf) format("truetype");
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
 }
+
 .services {
     font-family: TTLakes-Regular;
+
     &__header {
         box-sizing: border-box;
-        //width: 320px;
         height: 80px;
         background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
         padding-top: 16px;
         padding-left: 16px;
         margin-bottom: 16px;
     }
+
     &__title {
-        margin:0;
+        margin: 0;
         min-width: 288px;
         height: 48px;
-        //margin-top: 16px;
-        // margin-left: 16px;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
@@ -35,24 +35,18 @@ body{
         color: #7E7E82;
         font-weight: 500;
     }
-    &__body {
-        // width: 320px
-    }
+
+    &__body {}
 }
-// .title {
-   
-// }
+
 .logo-slider {
     &__wrapper {
         margin-left: 16px;
     }
-    &__slide {
 
+    &__slide {
         width: 240px;
         height: 72px;
-        // top: 96px;
-        // left: 16px;
-        // gap: 0px;
         opacity: 0px;
         background-color: #FFFFFF;
         border: 1px solid #EAEAEA;
@@ -60,41 +54,49 @@ body{
         margin-bottom: 16px;
     }
 
-		
+
     &__image {
         width: 140px;
         height: 70px;
         background: url("../img/бренды.svg") no-repeat;
-        
         transform: translate(10px, 1px);
+
         &--brand-lenovo {
             background-position: -42px -81px;
         }
+
         &--brand-samsung {
             background-position: -314px -81px;
-            border-top-left-radius:88%;
+            border-top-left-radius: 88%;
         }
+
         &--brand-apple {
             background-position: -586px -81px;
-        
+
         }
+
         &--brand-viewSonic {
             background-position: -858px -81px;
-        
+
         }
+
         &--brand-bosch {
             background-position: -42px -169px;
         }
+
         &--brand-hp {
             background-position: -314px -169px;
         }
+
         &--brand-acer {
-            background-position: -586px  -169px;
+            background-position: -586px -169px;
         }
+
         &--brand-sony {
             background-position: -858px -169px;
         }
     }
+
     &__button {
         width: 40px;
         height: 40px;
@@ -104,116 +106,117 @@ body{
         background: transparent url("../img/бренды.svg") no-repeat -216px -96px;
         transform: translate(184px, -54px);
     }
-    
 
-    &__fade{
-       
-
-    }
-}
-.logo_slider__fade {
-    //float: left;
-
-    position: absolute;
-    transform: translate(0, -97px);
-    right: 0;
-
-    z-index: 2;
-    // transform: translate(100vh, -97px);
+    &__fade {
+        position: absolute;
+        transform: translate(0, -97px);
+        right: 0;
+        z-index: 1;
         width: 24px;
         height: 81px;
-        // top: 87px;
-        // left: 296px;
-        // gap: 0px;
-        // opacity: 0px;
         background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
-.show-more{
-    &--hidden{
-        display:none;
+}
+
+
+.show-more {
+    &--hidden {
+        display: none;
+    }
+    &:hover{
+        cursor: pointer;
     }
 }
 
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.image {
-    width: 100%;
-    height: auto;
-}
-.swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom:0;
-    top:0px;
+.swiper-container {}
 
-//     width: 204px;
-// height: 12px;
+.swiper-wrapper {}
 
+.swiper-slide {}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+    top: 0px;
 }
+
 .swiper-pagination-clickable .swiper-pagination-bullet {
     width: 12px;
-height: 12px;
-background-color: #DDDDDD;
+    height: 12px;
+    background-color: #DDDDDD;
+}
 
-} 
 .swiper-pagination {
     position: relative;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background-color: #B5B6BC;
-}
-.swiper-scrollbar {
 }
 
 
 @media (min-width: 768px) {
-.services{
-    &__header{
-        height:56px;
-    }
-}
-
-.logo-slider{
-    //height: 200px;
-    &__wrapper{
-        flex-wrap: wrap;
-        //height: 200px;
-        // overflow: hidden;
-    }
-    &__wrapper--hidden{
-        height: 200px;
-        overflow: hidden;
-    }
-    &__slide{
-        //height: calc((100% - 16px) / 2);
-        // overflow: hidden;                                                    
-    }
-}
-.swiper-pagination {
-    display: none;
-}
-.show-more {
-    width: 150px;
-    &__text {
-        margin-top: 16px;
-        margin-bottom: 16px;
-        height: 24px;
-        font-family: TTLakes-Regular;
-        font-weight: 600;
-        font-size: 16px;
-        letter-spacing: -0.2px;
-        display: flex;
-        align-items: center;
+    .services {
+        &__header {
+            height: 56px;
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
     }
 
-    &__text::before {
-        content: "";
-        background-image: url("../img/expand.svg");
-        height: 24px;
-        width: 24px;
-        margin-right: 8px;
+    .logo-slider {
+        &__wrapper {
+            flex-wrap: wrap;
+            margin-left: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__wrapper--open-margin-bottom {
+            margin-bottom: 30px;
+        }
+
+        &__wrapper--hidden {
+            height: 163px;
+            overflow: hidden;
+        }
+
+        &__slide {
+            width: 224px;
+            height: 72px;
+        }
+
+        &__button {
+            transform: translate(164px, -54px);
+        }
+        &__fade--hidden {
+            display: none;
+        }
     }
-}
+
+    .show-more {
+        width: 156px;
+
+        &--hidden {
+            display: block;
+        }
+
+        &__text {
+            height: 24px;
+            font-family: TTLakes-Regular;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            display: flex;
+            align-items: center;
+            margin-left: 24px;
+        }
+
+        &__text::before {
+            content: "";
+            background-image: url("../img/expand.svg");
+            height: 24px;
+            width: 24px;
+            margin-right: 9px;
+        }
+    }
+
 }

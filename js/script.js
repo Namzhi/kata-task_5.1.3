@@ -1,39 +1,48 @@
-
-new Swiper('.logo-slider', {
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
+new Swiper(".logo-slider", {
     pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
     },
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     spaceBetween: 16,
-    
+    watchOverflow: true,
+    breakpoints: {
+        768: {
+            enabled: false,
+            spaceBetween: 24,
+        },
+    },
 });
 
 let buttonShow = document.querySelector(".show-more");
-let wrapper = document.querySelector('.logo-slider__wrapper');
 let buttonShowText = buttonShow.querySelector(".show-more__text");
-show();
+let wrapper = document.querySelector(".logo-slider__wrapper");
+
 function show() {
-    buttonShow.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    wrapper.classList.remove('logo-slider__wrapper--hidden');
-    buttonShowText.textContent = "Cкрыть";
-    let buttonHide = buttonShow;
-    hide(buttonHide);
-})
+    buttonShow.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
+        wrapper.classList.remove("logo-slider__wrapper--hidden");
+        wrapper.classList.add("logo-slider__wrapper--open-margin-bottom");
+
+        buttonShowText.textContent = "Cкрыть";
+
+        hide();
+    });
 }
-function hide (buttonHide) {
+
+function hide() {
     if (buttonShowText.textContent === "Cкрыть") {
-        buttonHide.addEventListener('click', function(evt){
-            wrapper.classList.add('logo-slider__wrapper--hidden');
+        buttonShow.addEventListener("click", function (evt) {
+            evt.preventDefault();
+
+            wrapper.classList.add("logo-slider__wrapper--hidden");
+            wrapper.classList.remove("logo-slider__wrapper--open-margin-bottom");
+
             buttonShowText.textContent = "Показать все";
             show();
-        })
+        });
     }
 }
 
+show();

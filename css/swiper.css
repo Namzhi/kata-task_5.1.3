@@ -89,12 +89,12 @@ body {
   -webkit-transform: translate(184px, -54px);
           transform: translate(184px, -54px);
 }
-.logo_slider__fade {
+.logo-slider__fade {
   position: absolute;
   -webkit-transform: translate(0, -97px);
           transform: translate(0, -97px);
   right: 0;
-  z-index: 2;
+  z-index: 1;
   width: 24px;
   height: 81px;
   background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
@@ -104,10 +104,8 @@ body {
 .show-more--hidden {
   display: none;
 }
-
-.image {
-  width: 100%;
-  height: auto;
+.show-more:hover {
+  cursor: pointer;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -132,24 +130,40 @@ body {
 @media (min-width: 768px) {
   .services__header {
     height: 56px;
+    margin-bottom: 24px;
+    padding-left: 24px;
   }
   .logo-slider__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+  .logo-slider__wrapper--open-margin-bottom {
+    margin-bottom: 30px;
   }
   .logo-slider__wrapper--hidden {
-    height: 200px;
+    height: 163px;
     overflow: hidden;
   }
-  .swiper-pagination {
+  .logo-slider__slide {
+    width: 224px;
+    height: 72px;
+  }
+  .logo-slider__button {
+    -webkit-transform: translate(164px, -54px);
+            transform: translate(164px, -54px);
+  }
+  .logo-slider__fade--hidden {
     display: none;
   }
   .show-more {
-    width: 150px;
+    width: 156px;
+  }
+  .show-more--hidden {
+    display: block;
   }
   .show-more__text {
-    margin-top: 16px;
-    margin-bottom: 16px;
     height: 24px;
     font-family: TTLakes-Regular;
     font-weight: 600;
@@ -161,12 +175,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 24px;
   }
   .show-more__text::before {
     content: "";
     background-image: url("../img/expand.svg");
     height: 24px;
     width: 24px;
-    margin-right: 8px;
+    margin-right: 9px;
   }
 }/*# sourceMappingURL=swiper.css.map */
