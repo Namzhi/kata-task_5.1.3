@@ -101,6 +101,10 @@ body {
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
+.show-more--hidden {
+  display: none;
+}
+
 .image {
   width: 100%;
   height: auto;
@@ -128,5 +132,41 @@ body {
 @media (min-width: 768px) {
   .services__header {
     height: 56px;
+  }
+  .logo-slider__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo-slider__wrapper--hidden {
+    height: 200px;
+    overflow: hidden;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .show-more {
+    width: 150px;
+  }
+  .show-more__text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 24px;
+    font-family: TTLakes-Regular;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .show-more__text::before {
+    content: "";
+    background-image: url("../img/expand.svg");
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
   }
 }/*# sourceMappingURL=swiper.css.map */
